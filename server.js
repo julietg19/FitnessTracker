@@ -2,11 +2,25 @@
 
 const express = require("express");
 
+const mongoose = require("mongoose");
+
 const app = express();
 
 const PORT = 3000;
 
 app.use(express.static("public"));
+
+//mongoose
+
+mongoose.connect("mongodb://localhost/workout", {
+  useNewUrlParser: true,
+  useFindAndModify: false,
+  useUnifiedTopology: true,
+});
+
+//seed
+
+
 
 //routes
 
