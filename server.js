@@ -20,7 +20,7 @@ mongoose.connect("mongodb://localhost/workout", {
 
 //seed
 
-
+app.use(require("./routes/api"));
 
 //routes
 
